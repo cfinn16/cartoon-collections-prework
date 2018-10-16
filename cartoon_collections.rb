@@ -12,5 +12,8 @@ end
 
 def find_the_cheese(snacks)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  (snacks & cheese_types).split("")
+  if (snacks & cheese_types).length > 0 
+    return (snacks & cheese_types)[0]
+  else
+    return nil
 end
