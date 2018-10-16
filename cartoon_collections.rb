@@ -16,4 +16,5 @@ def find_the_cheese(snacks)
     return (snacks & cheese_types)[0]
   else
     return nil
+  end
 end
